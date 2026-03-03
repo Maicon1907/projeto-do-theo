@@ -1,3 +1,6 @@
+@media screen {
+
+
 * {
   margin: 0;
   padding: 0;
@@ -47,9 +50,8 @@
 }
 
 .rodape {
-    position: absolute ;
-    bottom: 1px;
-    left: 600px;
+
+    
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -57,9 +59,11 @@
 .rodape img {
   width: 30px;
   height: 30px;
-  position: fixed;
-  bottom: 20px;
+ 
+  
+  
 }
 .rodape a {
   margin: 50px;
+}
 }
