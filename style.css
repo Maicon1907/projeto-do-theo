@@ -1,9 +1,6 @@
-
-@media screen  {
-
-
-
-
+/* ----------------------------- */
+/* ESTILOS BASE (para todos)     */
+/* ----------------------------- */
 
 * {
   margin: 0;
@@ -11,27 +8,25 @@
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
+
 .container {
   width: 100%;
   background-image: url("./img.jpg");
   background-size: cover;
   background-position: center;
-  height: 100vh;
-  display: inline-block;
-  align-items: center;
-
-  padding-left: 7px;
+  min-height: 100vh;
+  padding: 1rem;
 }
+
 .menu {
   display: flex;
-
-  padding: 30px;
-  position: relative;
+  gap: 20px;
+  padding: 20px 0;
 }
+
 .ativo {
   color: aliceblue;
   text-decoration: none;
-  margin-right: 50px;
   font-size: 18px;
   transition: color 0.3s ease;
   cursor: pointer;
@@ -39,40 +34,77 @@
 
 .conteudo {
   width: 100%;
-
-  display: block;
-
-  align-items: center;
-  padding:2rem;
+  padding: 1.5rem;
 }
-.conteudo p{
 
-    font-size: 20px;
-    color: rgb(8, 3, 3);
-    margin-bottom: 20px;
-    text-overflow: clip;
+.conteudo p {
+  font-size: 18px;
+  color: rgb(8, 3, 3);
+  margin-bottom: 20px;
 }
 
 .rodape {
-
-  background-color: rgb(77, 79, 79); 
+  background-color: rgb(77, 79, 79);
   display: flex;
-  flex-direction:center;
   justify-content: center;
   align-items: center;
-  
-  
-  
-  
+  padding: 20px;
 }
+
 .rodape img {
   width: 30px;
   height: 30px;
- 
-  
-  
 }
+
 .rodape a {
-  margin: 50px;
+  margin: 20px;
 }
+
+/* ----------------------------- */
+/* MOBILE FIRST (até 768px)      */
+/* ----------------------------- */
+
+@media screen and (max-width: 768px) {
+  .menu {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .ativo {
+    margin-right: 0;
+    font-size: 16px;
+  }
+
+  .conteudo p {
+    font-size: 16px;
+  }
+}
+
+/* ----------------------------- */
+/* DESKTOP (acima de 768px)      */
+/* ----------------------------- */
+
+@media screen and (min-width: 769px) {
+  .menu {
+    flex-direction: row;
+  }
+
+  .ativo {
+    margin-right: 40px;
+    font-size: 18px;
+  }
+
+  .conteudo p {
+    font-size: 20px;
+  }
+}
+
+/* ----------------------------- */
+/* OPCIONAL: regras só para landscape */
+/* ----------------------------- */
+
+@media screen and (orientation: landscape) {
+  .conteudo {
+    padding: 3rem;
+  }
 }
