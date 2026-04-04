@@ -45,12 +45,15 @@
 
 .rodape {
   background-color: rgb(77, 79, 79);
-  display: block;
+  display: flex;
+  position: relative;
+  justify-content: center;
   text-align: center;
   padding: 1rem;
 }
 
 .rodape img {
+  position: relative;
   width: 30px;
   height: 30px;
 }
