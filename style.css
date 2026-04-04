@@ -1,6 +1,3 @@
-/* ----------------------------- */
-/* ESTILOS BASE (para todos)     */
-/* ----------------------------- */
 
 * {
   margin: 0;
@@ -16,9 +13,9 @@
   background-position: center;
   min-height: 100vh;
   padding: 1rem;
-}
+}   
 
-.menu {
+.menu {    
   display: flex;
   gap: 50px;
   padding: 20px 0;
