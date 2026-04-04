@@ -20,8 +20,13 @@
 
 .menu {
   display: flex;
-  gap: 20px;
+  gap: 50px;
   padding: 20px 0;
+}
+img {
+  width: 30px;
+  height: 30px;
+
 }
 
 .ativo {
@@ -43,24 +48,7 @@
   margin-bottom: 20px;
 }
 
-.rodape {
-  background-color: rgb(77, 79, 79);
-  display: flex;
-  position: relative;
-  justify-content: center;
-  text-align: center;
-  padding: 1rem;
-}
 
-.rodape img {
-  position: relative;
-  width: 30px;
-  height: 30px;
-}
-
-.rodape a {
-  margin: 20px;
-}
 
 /* ----------------------------- */
 /* MOBILE FIRST (até 768px)      */
@@ -80,10 +68,7 @@
   .conteudo p {
     font-size: 16px;
   }
-  .rodape {
-    flex-direction: row;
-
-  }
+ 
 }
 
 /* ----------------------------- */
@@ -103,9 +88,7 @@
   .conteudo p {
     font-size: 20px;
   }
-  .rodape {
-    flex-direction: row;
-  }
+ 
 }
 
 /* ----------------------------- */
